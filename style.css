@@ -1,0 +1,147 @@
+*{
+    font-family: "IranSansFaNam";
+    direction: rtl;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: 0.3s;
+    color:rgba(195, 198, 217, 1);
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+input,
+button{
+    outline: none;
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+
+input:focus-visible{
+    outline: none;
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+body{
+    background: #15141C;
+    position: relative;
+}
+/* Fonts */
+@font-face{
+    font-family: "Estedad";
+    src: url("./css/fonts/Estedad[wght\,kshd].ttf") format("ttf");
+    src: url("./css/fonts/Estedad[wght\,kshd].woff2") format("woff2");
+}
+.top-header div span{
+    margin-left: 16.34px;
+    margin-right: 16.34px;
+    font-weight: 400;
+    font-family: "Estedad";
+    font-weight: 400;
+}
+.top-header{
+    margin-top: 18px;
+    margin-bottom: 19px;
+    font-size: 14px;
+    line-height: 10px;
+}
+.menu-header nav ul li{
+    display: inline-block;
+    position: relative;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.menu-header nav ul li a{
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-family: "Estedad";
+    font-weight: 400;
+    font-size: 14px;
+    padding-bottom: 12px;
+}
+.menu-header nav ul li:not(:first-child){
+    margin-right: 26.5px;
+}
+.menu-header nav ul li a span{
+    font-family: "Estedad";
+    font-weight: 400;
+    margin-left: 14.5px;
+}
+.menu-header nav ul li ul{
+    display: none;
+}
+.menu-header nav ul li ul li{
+    margin-right: 0px!important;
+    margin: 10px;
+    width: 100%;
+    margin-bottom: 0px;
+}
+.menu-header nav ul li::before{
+    content: '';
+    top: 0;
+    right: 0;
+    width: 0%;
+    border-top: 0px solid rgba(255, 0, 0, 0);
+    position: absolute;
+    transition: .5s ease-in-out;
+}
+.menu-header nav ul li:hover::before{
+    border-top: 1px solid rgba(246, 184, 40, 1);
+    width: 80%;
+}
+.menu-header nav ul li::before{
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 0px;
+    border-right: 1px solid rgba(246, 184, 40, 0);
+    position: absolute;
+    transition: .5s ease-in-out;
+}
+.menu-header nav ul li:hover::before{
+    border-right: 1px solid rgba(246, 184, 40, 1);
+    height: 80%;
+}
+.menu-header nav ul li ul li::before{
+    content: '';
+    bottom: 0;
+    right: 0;
+    width: 0%;
+    border-bottom: 0px solid rgba(255, 0, 0, 0);
+    position: absolute;
+    transition: .5s ease-in-out;
+}
+.menu-header nav ul li ul li:hover::before{
+    border-bottom: 1px solid rgba(246, 184, 40, 1);
+    width: 100%;
+    border-top: 0px rgba(255, 0, 0, 0);
+}
+.menu-header nav ul li:hover ul{
+    display: block;
+    position: absolute;
+    padding: 10px;
+    width: 100%;
+    background:#2A2933 ;
+    border-radius: 7px;
+}
+.box-search-header input{
+width: 100%;
+height: auto;
+}
+::placeholder{
+    font-family: "Estedad";
+    font-weight: 400;
+    font-size: 13px;
+}
+.box-search-header{
+    width: 301px;
+    height: 45px;
+    background: #2A2933;
+    border-radius: 7px;
+    padding: 15px;
+}
